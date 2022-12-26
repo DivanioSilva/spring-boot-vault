@@ -1,0 +1,19 @@
+#spring.application.name=vault-connection
+#spring.cloud.vault.uri=http://localhost:8200
+#spring.cloud.vault.token=root
+
+spring:
+  cloud:
+    vault:
+      enabled: true
+      authentication: TOKEN
+      token: "root"
+      scheme: http
+      uri: http://localhost:8200
+      connection-timeout: 5000
+      read-timeout: 15000
+      kv:
+        application-name:
+        enabled: true
+#        default-context: application
+#        profile-separator: '/'
