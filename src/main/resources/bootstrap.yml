@@ -13,7 +13,7 @@ spring:
       connection-timeout: 5000
       read-timeout: 15000
       kv:
-        application-name:
+        application-name: divanio
         enabled: true
 #        default-context: application
 #        profile-separator: '/'
